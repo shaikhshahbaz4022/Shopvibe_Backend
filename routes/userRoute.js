@@ -134,7 +134,7 @@ function token_Generator(res, name, id,image) {
         { expiresIn: "12d" }
     );
     
-    const redirectUrl = `http://127.0.0.1:5500/frontend/index.html?token=${token}&username=${name}&image=${image}`;
+    const redirectUrl = `https://shopvibe-online-shopping.netlify.app/index.html?token=${token}&username=${name}&image=${image}`;
 
     res.redirect(redirectUrl);
 }
