@@ -115,7 +115,8 @@ userRouter.get(
                 });
             }
         } catch (error) {
-            res.status(500).send({ msg: "An error occurred while authenticating with Google" });
+
+            res.status(500).send({ msg: "An error occurred while authenticating with Google","err":error.message });
         }
     }
 );
